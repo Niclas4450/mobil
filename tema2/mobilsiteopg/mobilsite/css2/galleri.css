@@ -1,0 +1,67 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+figcaption {
+  color: rgb(41, 0, 225);
+  font-family: "Junge", serif;
+  font-size: 1.1rem;
+  text-align: center;
+}
+figcaption {
+  letter-spacing: 1px;
+  word-spacing: 0.2rem;
+  line-height: 1.4rem;
+  text-wrap: balance;
+}
+h1 {
+  color: rgb(41, 0, 225);
+  font-family: "Jacques Francois Shadow", cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+h2 {
+  color: rgb(41, 0, 225);
+  font-family: "Nunito", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+p {
+  color: rgb(41, 0, 225);
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+img {
+  display: block;
+  width: 100%;
+}
+h1 {
+  border-bottom: 2px solid rgb(41, 0, 225);
+}
+a {
+  color: rgb(14, 154, 176);
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+img {
+  padding: 25px 0;
+}
+figcaption {
+  padding: 10px;
+}
+section {
+  background-color: #151515;
+}
+section {
+  border: rgb(41, 0, 225) 2px solid;
+}
+header,
+footer {
+  height: 100px;
+  background-color: #151515;
+}
+section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
