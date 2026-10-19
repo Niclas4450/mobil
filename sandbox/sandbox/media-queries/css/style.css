@@ -1,0 +1,193 @@
+/* Lidt basis-styling */
+/* Der er border og padding på sections */
+/* Paragraffer inde i articles har lys, blå baggrund */
+/* Paragraffer der ikke står inde i articles har lys, gul baggrund */
+
+section {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+p {
+  background-color: rgb(239, 246, 213);
+}
+article > p {
+  background-color: rgb(190, 214, 235);
+}
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+h2 {
+  grid-column: 1/3;
+}
+/* h2 {
+  grid-column: 1/3;
+}
+.div1 {
+  border: 1px solid red;
+}
+
+@media (width < 550px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  h2 {
+    grid-column: 1 / 2;
+  }
+  .div1 {
+    border: 1px solid red;
+  }
+} */
+/* ******************************************************* */
+/* ØVELSER */
+/* ******************************************************* */
+
+/* Øvelse 1-2 er repetition */
+
+/* Øvelse 1: Lav section om til grid */
+/* Først skal du lave din section om til en 
+grid-container med to (2) kolonner */
+
+/* Øvelse 2: Ret til så overskriftene i dine sections 
+fylder hele første række */
+
+/* Øvelse 3-4 omhandler <div> */
+
+/* Øvelse 3: De tre paragraffer skal nu stå samlet som ét
+grid-item og have en rød ramme */
+
+/* Øvelse 4: Eksperimenter nu med at opmarkere elementer i
+de andre to sections. 
+Fx. i <section> 2 kunne du sætte en <div> om din <article> 
+og den første <p> 
+og i <section> 3 kunne du sætte en <div> om de to articles.
+Det vigtige er at prøve lidt forskelligt, for at finde ud
+af om du har gennemskuet hvordan det her virker...
+... og endnu vigtigere: evt. at finde ud af, hvad du ikke 
+har forstået helt endnu :) */
+
+/* MEDIA QUERIES */
+
+/* Øvelse 5: Tilføj en media query */
+/* Udvikl nu dit design således, at siden ikke har nogen 
+grids, hvis bredden er mindre end 550 pixels, men tilføjer 
+grid til sidens sections, når siden bliver 550 pixels eller 
+derover 
+PLUS: sørg for at dine <div> elementer (igen) har en rød ramme 
+om sig
+*/
+
+/* Øvelse 6: Lille ændring */
+/* sørg nu for, at den røde ramme om dine <div> elementer ses
+OGSÅ, når siden er smal (altså mindre end 550) */
+
+/* Øvelse 7: Varierede layouts */
+/* Kig nu ind i HTML dokumentet og identificer alle de steder
+hvor <section> og <aside> elementer har en 'class'. Alle class'
+hedder noget med "grid_" og nogle tal, der fortæller, hvor 
+mange kolonner der skal være og hvor mange fraktioner hver 
+kolonne skal være. */
+/* Lav nu en Media Query, der aktiveres, når siden er 800 pixels
+bred eller derover. I denne Media Query skal du lave en CSS regel
+for hver af disse classes, der definerer grid'et. 
+Husk også at tage hånd om overskrifterne, der skal fylde hele 
+sidebredden. */
+
+/* ******************************************************* */
+/* LØSNINGSFORSLAG */
+/* ******************************************************* */
+
+/* Øvelse 1: Lav section om til grid */
+/* section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+
+/* Øvelse 2: Ret til så overskriftene i dine sections 
+fylder hele første række */
+/* section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+h2 {
+  grid-column: 1 / -1;
+} */
+
+/* Øvelse 3: De tre paragraffer skal nu stå samlet som ét
+grid-item og have en rød ramme */
+/* Bemærk, at du OGSÅ skal rette til i HTML-dokumentet 
+(du skal indsætte et <div> element og give det en class - 
+fx med navnet "paragraph-container' så det passer med min
+foreslåede css-rule herunder. 
+Men navnet er noget vi selv bestemmer, så du må gerne finde
+på noget andet */
+
+/* section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+h2 {
+  grid-column: 1 / -1;
+}
+.paragraph-container {
+  border: 1px solid red;
+} */
+
+/* Øvelse 4: Eksperimenter nu med at opmarkere elementer i
+de andre to sections. */
+/* Da det er et eksperiment, og da det mest finder sted i din 
+HTML, er der ikke noget løsningsforslag. */
+
+/* Øvelse 5: Tilføj en media query */
+/* @media (width >= 550px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  h2 {
+    grid-column: 1 / -1;
+  }
+  .paragraph-container {
+    border: 1px solid red;
+  }
+} */
+
+/* Øvelse 6: Lille ændring */
+/* .paragraph-container {
+  border: 1px solid red;
+}
+@media (width >= 550px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  h2 {
+    grid-column: 1 / -1;
+  }
+} */
+
+/* Øvelse 7: Varierede layouts */
+
+@media (width > 800px) {
+  h1,
+  h2 {
+    grid-column: 1 / -1;
+  }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+  }
+  .grid_5-3 {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    column-gap: 1em;
+  }
+  .grid_3-1-1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    column-gap: 1em;
+  }
+}

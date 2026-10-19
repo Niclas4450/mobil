@@ -1,0 +1,19 @@
+body .grid_2-1 img p {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2em;
+  background-color: rgb(236, 234, 230);
+  padding: 0.4em;
+  border-radius: 5px;
+}
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid_2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5px;
+}
+img {
+  width: 100%;
+}

@@ -1,0 +1,23 @@
+h1,
+h2 {
+  color: rgb(68, 24, 225);
+  background-color: rgb(232, 165, 29);
+}
+section {
+  background-color: rgb(41, 180, 81);
+}
+p {
+  background-color: rgb(180, 71, 41);
+}
+section {
+  border: 3px solid rgb(24, 215, 225);
+}
+h1 {
+  font-size: 64px;
+}
+h2 {
+  font-size: 120%;
+}
+p {
+  font-size: 0.8em;
+}

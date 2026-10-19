@@ -1,0 +1,39 @@
+.img1 {
+  filter: blur(5px);
+}
+.img2 {
+  filter: saturate(1000%);
+}
+.img3 {
+  filter: brightness(200%);
+}
+.img4 {
+  filter: contrast(200%);
+}
+.img5 {
+  filter: grayscale(100%);
+}
+.img6 {
+  filter: hue-rotate(180deg);
+}
+.img7 {
+  filter: invert(100%);
+}
+.img8 {
+  filter: opacity(50%);
+}
+.img9 {
+  filter: sepia(100%);
+}
+.img10 {
+  filter: drop-shadow(16px 16px 20px red);
+}
+img {
+  width: 100%;
+  height: 300px;
+}
+.grid_1 {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr 1fr;
+  grid-gap: 10px;
+}

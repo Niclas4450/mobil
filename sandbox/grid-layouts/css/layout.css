@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body > section {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2em;
+  background-color: rgb(236, 234, 230);
+  padding: 0.4em;
+  border-radius: 5px;
+}
+
+header,
+footer {
+  background-color: antiquewhite;
+  height: 120px;
+}
+main {
+  margin: 1rem;
+}
+
+/* Øvelse 1 */
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Øvelse 2 */
+/* Denne lille indstilling får billederne til at 
+følge sidens layout (og altså blive mindre, når 
+der er mindre plads), men sikrer, at de ikke kan 
+'strækkes' - altså blive bredere end deres pixel-vidde. 
+Hvis man gør billeder større pixellerer de nemlig, 
+og det ser ikke så godt ud. */
+img {
+  max-width: 100%;
+}
+/* Øvelse 2 */
+.grid_2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5px;
+}
+/* Øvelse 3 */
+/* Ikke noget her i CSS. Det foregår i HTML */
+
+/* Øvelse 4 */
+.grid_5-3 {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  gap: 5px;
+}
